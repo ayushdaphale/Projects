@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid with Images</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script>
+        function addToCart() {
+            alert("Added to your cart successfully!");
+        }
+        
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f9;
+    }
+    
+    .products-section {
+      background-image: url(https://images.pexels.com/photos/4483343/pexels-photo-4483343.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .products-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #ffffff;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 0 50px;
+    }
+    
+    .product-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .product-card h2 {
+        font-size: 1.5rem;
+        margin: 15px 0;
+        color: #ff6f61;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .product-card:hover h2 {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .product-card p {
+        font-size: 1rem;
+        color: #777;
+        line-height: 1.6;
+        margin-top: 10px;
+    }
+    .container {
+      text-align: center;
+  }
+  
+  .add-to-cart-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+      background-color: #45a049;
+  }
+  
+    
+    </style>
+</head>
+<body>
+
+<div class="products-section">
+    <h1>Our Services</h1>
+    <div class="product-grid">
+      
+        <div class="product-card">
+            <img src="mehendiii.jpg" alt="Product 1">
+            <h2>Mehendi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet.</p>
+            <div class="container">
+              <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+            <img src="photo.jpg" alt="Product 2">
+            <h2>Photography</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="container">
+              <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+            <img src="wedding.jpg" alt="Product 3">
+            <h2>Wedding</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <div class="container">
+              <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+            <img src="college.jpg" alt="Product 4">
+            <h2>College Fest</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <div class="container">
+              <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+            <img src="hall.jpg" alt="Product 5">
+            <h2>Hall</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            <div class="container">
+              <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+            <img src="webinars.jpg" alt="Product 6">
+            <h2>Webinars</h2>
+            <p>Mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.</p>
+            <div class="container">
+              <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servces - EventO</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      width: 95%;
+      height: 100%;
+    }
+    .container>h1{
+position: absolute;
+font-size: 50px;
+top: 5%;
+left: 45%;
+color: black;
+    }
+    .grid1{
+      display: flex;
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    background-color: black;
+    }
+    .grid1>.box{
+      width: 30%;
+      height: 500px;
+      display: flex;
+      background-color: aqua;
+      border: 2px solid black;
+      margin: 0px 34px ;
+    }
+    .grid2{
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 110%;
+      background-color: black;
+    }
+    .grid2>.box{
+      width: 30%;
+      height: 500px;
+      display: flex;
+      background-color: aqua;
+      border: 2px solid black;
+      margin: 0px 34px ;
+    }
+    .box-content>img{
+      width: 436.5px;
+      position: absolute;
+    }
+    .box-content>.img-content{
+      position: absolute;
+      width: 30%;
+      height: 40%;
+      top: 30%;
+      left: 35%;
+    }
+    .img-content>h1{
+      text-align: center;
+      font-size: 30px;
+      position: absolute;
+    left: -90%;
+    top: -15%;
+    }
+    .img-content>p{
+      text-align: center;
+      font-size: 30px;
+      position: absolute;
+    left: -90%;
+    top: -15%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Services</h1>
+    <div class="grid1">
+      <div class="box">
+        <div class="box-content">
+          <img src="mehendi.jpg" alt="">
+          <div class="img-content">
+          <h1>Mehendi Ceremony</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, dignissimos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+<div class="grid2">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+      
+    </div>
+  </div>
+</body>
+</html> -->

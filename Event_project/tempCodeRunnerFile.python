@@ -1,0 +1,5 @@
+import os
+
+x = input("enter your what u want to speak : ")
+command = f"say {x}"
+os.system(command)

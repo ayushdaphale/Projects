@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll to Section</title>
+    <style>
+        /* Styling for the link */
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* Styling for sections */
+        section {
+            height: 100vh; /* Full height for demo purposes */
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Example background colors for each section */
+        #section1 {
+            background-color: lightcoral;
+        }
+        #section2 {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Link that scrolls to Section 2 -->
+    <a onclick="scrollToSection('section2')">Scroll to Section 2</a>
+
+    <!-- Sections of the page -->
+    <section id="section1">
+        <h1>Section 1</h1>
+        <p>This is the first section. Click the link to scroll to the next section.</p>
+    </section>
+
+    <section id="section2">
+        <h1>Section 2</h1>
+        <p>You've scrolled to the second section!</p>
+    </section>
+
+    <script>
+        // Function to scroll to a specific section by its ID
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
+

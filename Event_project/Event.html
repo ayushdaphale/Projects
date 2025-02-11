@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Event.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Event Management</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="evento.png" alt="" width="170px">
+            <div class="login">
+                    <a href="Registration.html">Login</a>
+                </div>
+                <div class="location">
+    <a href="#" onclick="redirectToMap()">Locate Us</a>
+
+                </div>
+            </div>
+
+            </nav>
+            
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#">Venues</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                </ul>
+            </div>
+         </div>
+        
+    </header>
+    <div class="home">
+        <img src="home.jpg" alt="">
+        <div class="center">Your Occassions Your Way</div>
+        <div class="searchh"><input type="text" placeholder="Search For places..."></div>
+     </div>
+    <main>
+        <p>At Evento, we believe that every occasion is unique and deserves a personalized touch</p>
+        <section>
+             <h2>MAJOR CITIES</h2>
+        <h3>We Are There For You</h3>
+        <div class="place">
+            <div class="divv">
+               <h2>4 Cities</h2> <img src="citi.svg" alt="" width="200px">
+            </div>
+            <div class="div">
+                <h2>100 + Venues </h2><img src="venue.svg" alt="" width="200px">
+            </div>
+            
+        </div>
+            
+        <div class="content">
+             </div>
+             <div class="box">
+                <div class="cards">
+                    <img src="mumbai.jpg" alt="">
+                    <div class="cardd-content">
+                        <h3>Mumbai</h3>
+                        <P><b>NAMASTE MUMBAI!</b><br>With a decent price we have launched our franchise in Bandra, Andheri and Dadar.</P>
+                    </div>
+                  
+                </div>
+                <div class="cards">
+                    <img src="Tamil.jpg" alt="">
+                    <div class="cardd-content">
+                        <h3>Chennai</h3>
+                        <P><b>VANAKKAM!</b><br>Chennai</P>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="delhi.jpg" alt="">
+                    <div class="cardd-content">
+                        <h3>Delhi</h3>
+                        <P>Yeh Sheher Nahi Mehfil Hai! Lets have Our Mehfil In Agra City.</P>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="banglore.jpg" alt="">
+                    <div class="cardd-content">
+                        <h3>Banglore</h3>
+                        <P><b>SPACE CITY</b><br>Bangalore We are coming..</P>
+                    </div>
+                </div>
+             </div>
+
+        </section>
+    </main>
+<div class="hero">
+    <div class="Top">Customers Love</div>
+    <div class="Sub-top">And Thats What Makes Us Inspire</div>
+    <div class="direction">
+    <div class="left-div">
+        <img src="customer.jpg" alt="" width="300px">
+    </div>
+    <div class="right-div">
+        <p>So when we we went on to EventO, it was a very hassle free experience. They are very proactive, very engaging.
+            I will definitely recommend Bookeventz to other people, especially those people who want to have a very warm and engaging experience. Because end of the day, event is all about, celebrating your joy and it is important the event management people understand it.</p>
+    </div>
+</div>
+</div>
+<footer>
+    <div class="f-item-con">
+        <div class="app-info">
+            <span class='app-name'>
+                <span class='app-initial'>E</span>vento
+            </span>
+            <p>We provides you with <strong>Well organised</strong> Events.</p>
+        </div>
+        <div class="useful-links">
+            <div class="footer-title">Useful Links</div>
+            <ul>
+                <li>venues</li>
+                <li>Sign In</li>
+                <li>About Us</li>
+                <li>team</li>
+                <li>contact us</li>
+                <li>offers</li>
+            </ul>
+        </div>
+        <div class="help-sec">
+            <div class="footer-title">Help</div>
+            <ul>
+                <li>Help Me</li>
+                <li>Feedback</li>
+                <li>Report a Issue / Bug</li>
+            </ul>
+        </div>
+        <div class="g-i-t">
+            <div class="footer-title">Get in Touch</div>
+            <form action="/" method="post" class="space-y-2">
+                <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' /><br>
+                <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' /><br>
+                <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                    placeholder='Message...'></textarea><br>
+                <button type="submit" class='f-btn'>Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class='cr-con'>Copyright &copy; @2024. EventO Services Pvt. Ltd.</div>
+</footer>
+    <script>
+        function redirectToMap() {
+            // The coordinates of the location (latitude, longitude)
+            const latitude = 28.7041;
+            const longitude = 77.1025;
+
+            // Google Maps link to the specific location
+            const mapUrl = 'https://maps.app.goo.gl/DqtcTpxd28bRUjBk9';
+
+            // Redirecting to Google Maps
+            window.open(mapUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
